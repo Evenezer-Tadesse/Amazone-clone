@@ -1,35 +1,41 @@
 .Cards {
-    height: 350px;
-    width: 350px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgbe(0, 0, 0, 0.2);
+  height: 350px;
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgbe(0, 0, 0, 0.2);
 }
 .Cards img {
-width: 95%;
-object-fit: contain;
-max-height: 250px;
-padding: 0px 10px;
+  width: 95%;
+  object-fit: contain;
+  max-height: 250px;
+  padding: 0px 10px;
 }
 .Cards a {
-    text-decoration: none;
-    color: rgb(35, 35, 35);
+  text-decoration: none;
+  color: rgb(35, 35, 35);
 }
 .Cards h2,
-
 .Cards p {
-    padding: 5px;
-    margin-left: 15px;
+  padding: 5px;
+  margin-left: 15px;
 }
 .Cards p {
-    font-size: 12px;
-    font-weight: bold;
-    color: rgb(9, 132, 209);
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(9, 132, 209);
 }
 
 .Catagory_Container {
-    position: relative;
-    margin-top: -10%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
+  position: relative;
+  margin-top: -10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+@media (min-width: 768px) {
+  .Category_Container {
+    margin-top: -5%;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -30,7 +30,7 @@ const [{basket}, dispatch] = useContext(DataContext)
                     </span>
                     <div>
                         <p>Delivered to</p>
-                        <span>ITALY</span>
+                        <span>Uganda</span>
                     </div>
                 </div>
                 
