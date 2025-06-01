@@ -1,24 +1,20 @@
-// import firebase from "firebase/compat/app";
+
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-import {} from 'firebase/auth'
-import 'firebase/copat/firebase'
-import 'firebasecompat/auth'
-
-
-
-
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAuwBV3bBIsym0P7H61OJAGBaY4R8Is8Fc",
-  authDomain: "clone-493f6.firebaseapp.com",
-  projectId: "clone-493f6",
-  storageBucket: "clone-493f6.firebasestorage.app",
-  messagingSenderId: "379804418677",
-  appId: "1:379804418677:web:75588119af879a14b06e3c"
+  apiKey: "AIzaSyAU3lfNtoAPSbCJScpdgCiQxx3WAQKP7fg",
+  authDomain: "fir-af6c5.firebaseapp.com",
+  projectId: "fir-af6c5",
+  storageBucket: "fir-af6c5.firebasestorage.app",
+  messagingSenderId: "1093819217462",
+  appId: "1:1093819217462:web:3194b9c11a4ed77e77ca97",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app)
-export const db = app.fireStore()
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+export { auth, db };
