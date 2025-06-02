@@ -6,7 +6,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
 
-app.use(cors({ origin: "https://amazon-frontend-opp.netlify.app/" }));
+app.use(cors({ origin: "https://amazon-frontend-opp.netlify.app/",methods:["GET","POST"],credentials:true}));
 app.use(express.json());
 
 // Routes
