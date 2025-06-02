@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.jsx"
+    "start": "node index.jsx",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
     
   },
   "keywords": [],
@@ -15,5 +18,8 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "stripe": "^18.2.0"
-  }
+  },
+  "engines": {
+  "node": "20.x"
+}
 }

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-// import style from './Results.module.csss'
+// import style from './Results.module.css'
 import LayOut from '../../Components/LayOut/LayOut'
 import { useParams } from 'react-router-dom';
 import axios from 'axios'
-import {productURL} from '../../API/EndPoints'
+import {productURL} from '../../Api/EndPoints'
 import ProductCard from '../../Components/Products/ProductCard'
 import style from './Reslut.module.css'
 
